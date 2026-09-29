@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hole In One Resort</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylep2.css"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="audioControl.js"></script>
+</head>
+<body>
+
+    <!-- 🔹 شريط التنقل -->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html" data-lang="home">Home</a></li>
+                <li><a href="page 2.html" data-lang="offers">Our Offers</a></li>
+                <li><a href="page4.html" data-lang="packages">Our Packages</a></li>
+                <li><a href="aboutus.html" data-lang="about">About Us</a></li>
+                <li><a href="page 3.html" data-lang="contact">Contact Us</a></li>
+                <li><a href="page8.html" class="btn-book" data-lang="book">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 data-lang="courses-title">Our Golf Courses & Facilities</h1> 
+        <p data-lang="courses-desc">Welcome to Hole In One Golf Resort, where we offer world-class golfing experiences and premium facilities.</p>
+
+        <!-- 🔹 شبكة الملاعب -->
+        <div class="grid-container">
+            <div class="card">
+                <h3 data-lang="course1-title">Sea View Course</h3>
+                <img src="images/seaview.png" alt="Sea View Course">
+                <p data-lang="course1-desc">A breathtaking golf course with stunning ocean views.</p>
+            </div>
+            <div class="card">
+                <h3 data-lang="course2-title">The Valley Course</h3>
+                <img src="images/The Valley Course.png" alt="The Valley Course">
+                <p data-lang="course2-desc">A challenging course surrounded by lush greenery.</p>
+            </div>
+            <div class="card">
+                <h3 data-lang="course3-title">The Sunset Course</h3>
+                <img src="images/The Sunset Course.png" alt="Sunset Course">
+                <p data-lang="course3-desc">An elegant course with a spectacular sunset backdrop.</p>
+            </div>
+        </div>
+
+        <h2 data-lang="hotels-title">🏨 Our Hotels</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3 data-lang="hotel1-title">Luxury Golf Hotel</h3>
+                <img src="images/hotel1.png" alt="Luxury Golf Hotel">
+                <p data-lang="hotel1-desc">Enjoy a luxurious stay with premium services.</p>
+            </div>
+            <div class="card">
+                <h3 data-lang="hotel2-title">Resort & Spa</h3>
+                <img src="images/hotel2.png" alt="Resort & Spa">
+                <p data-lang="hotel2-desc">Relax with world-class spa and resort facilities.</p>
+            </div>
+        </div>
+
+        <h2 data-lang="clubs-title">🎭 Exclusive Clubs</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3 data-lang="club1-title">Dance Club</h3>
+                <img src="images/club2 dancing.webp" alt="Dance Club">
+                <p data-lang="club1-desc">Join exciting dance classes and social nights.</p>
+            </div>
+            <div class="card">
+                <h3 data-lang="club2-title">Gaming Club</h3>
+                <img src="images/club1game.jpg" alt="Gaming Club">
+                <p data-lang="club2-desc">Experience top-tier gaming tournaments.</p>
+            </div>
+        </div>
+
+        <h2 data-lang="dining-title">🍽️ Fine Dining</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3 data-lang="restaurant1-title">Gourmet Restaurant</h3>
+                <img src="images/restraurant1.png" alt="Gourmet Restaurant">
+                <p data-lang="restaurant1-desc">Indulge in exquisite fine dining.</p>
+            </div>
+            <div class="card">
+                <h3 data-lang="restaurant2-title">Casual Bistro</h3>
+                <img src="images/coffeshop1.png" alt="Casual Bistro">
+                <p data-lang="restaurant2-desc">Enjoy a cozy and relaxed coffee shop.</p>
+            </div>
+        </div>
+
+        <h2 data-lang="proshop-title">🏌️‍♂️ Pro Shop</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3 data-lang="proshop-name">Golf Pro Shop</h3>
+                <img src="images/pro shop.png" alt="Pro Shop">
+                <p data-lang="proshop-desc">Find premium golf equipment and accessories.</p>
+            </div>
+        </div>
+
+        <p data-lang="visit-desc">Experience the best of golf and luxury at Hole In One Golf Resort. Book your visit today!</p>
+    </div>
+    
+    <audio id="backgroundAudio" loop>
+        <source src="audio/page2.mp3" type="audio/mp3">
+    </audio>
+    
+    <!-- 🔹 الأزرار الجانبية -->
+    <div class="side-buttons">
+        <button onclick="toggleDarkMode()" data-lang="dark-mode">🌓 Dark Mode</button>
+        <button onclick="increaseFontSize()" data-lang="increase-font">🔍 A+</button>
+        <button onclick="decreaseFontSize()" data-lang="decrease-font">🔍 A-</button>
+        <button onclick="playAudio()" data-lang="play-sound">🔊 Play Sound</button>
+        <button onclick="pauseAudio()" data-lang="pause-sound">🔇 Pause Sound</button>
+        <button id="language-toggle">العربية</button> <!-- زر الترجمة -->
+    </div>
+
+    <script src="script.js" defer></script>
+    <script src="translate2.js" defer></script>
+
+   
+</body>
+</html>

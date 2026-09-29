@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us | Hole In One Resort</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style7.css"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 🔹 شريط التنقل -->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html" data-lang="home">Home</a></li>
+                <li><a href="page 2.html" data-lang="offers">Our Offers</a></li>
+                <li><a href="page4.html" data-lang="packages">Our Packages</a></li>
+                <li><a href="about.html" class="active" data-lang="about">About Us</a></li>
+                <li><a href="page 3.html" data-lang="contact">Contact Us</a></li>
+                <li><a href="page8.html" class="btn-book" data-lang="book">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 🔹 محتوى الصفحة -->
+    <div class="container">
+        <h1 data-lang="about-title">About Hole In One Golf Resort</h1>
+        <p data-lang="about-desc">Welcome to <strong>Hole In One Golf Resort</strong>, the ultimate destination for golf enthusiasts in the heart of <strong>Portugal</strong>. Nestled in the stunning landscapes of the Algarve region, our resort offers world-class golfing experiences combined with luxury accommodations and top-tier facilities.</p>
+
+        <div class="feature-list">
+            <div class="feature-item">
+                <img src="images/first.jpg" alt="Resort View" height="300" width="300">
+                <div class="text">
+                    <h2 data-lang="golf-exp">🏌️‍♂️ Experience Golf Like Never Before</h2>
+                    <p data-lang="golf-desc">Our championship-grade golf courses are designed to challenge and inspire players of all skill levels. Enjoy breathtaking views, perfectly maintained greens, and a variety of holes tailored to provide an unforgettable experience.</p>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <div class="text">
+                    <h2 data-lang="location">🌍 Prime Location in Portugal</h2>
+                    <p data-lang="location-desc">Located in the beautiful Algarve region, our resort provides a peaceful yet luxurious getaway. Whether you're here for golf, relaxation, or a mix of both, Hole In One Resort is the perfect escape.</p>
+                </div>
+                <img src="images/location.png" alt="Portugal Location">
+            </div>
+            
+            <div class="feature-item">
+                <h2 data-lang="more-than-golf">🏨 More Than Just Golf</h2>
+                <p data-lang="more-than-golf-desc">Beyond our golf courses, our resort features luxury hotels, gourmet dining, wellness spas, and vibrant nightlife. Whether you want to unwind after a day on the course or explore our exclusive entertainment options, we have something for everyone.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 🔹 الأزرار الجانبية -->
+    <div class="side-buttons">
+        <button onclick="toggleDarkMode()" data-lang="dark-mode">🌓 Dark Mode</button>
+        <button onclick="increaseFontSize()" data-lang="increase-font">🔍 A+</button>
+        <button onclick="decreaseFontSize()" data-lang="decrease-font">🔍 A-</button>
+        <button onclick="playAudio()" data-lang="play-sound">🔊 Play Sound</button>
+        <button onclick="pauseAudio()" data-lang="pause-sound">🔇 Pause Sound</button>
+        <button id="language-toggle">العربية</button> <!-- زر الترجمة -->
+    </div>
+<!-- 🔹 مشغل الصوت -->
+<audio id="backgroundAudio" loop>
+    <source src="audio/about us_2.mp3" type="audio/mp3">
+</audio>
+
+    <script src="script3.js" defer></script>
+    <script src="translate9.js" defer></script>
+
+</body>
+</html>

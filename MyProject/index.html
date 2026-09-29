@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hole In One Golf Resort</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="script.js" defer></script>
+    <script src="translate.js" defer></script> <!-- ربط ملف الترجمة -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 🔹 شريط التنقل -->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html" data-lang="home">Home</a></li>
+                <li><a href="page 2.html" data-lang="offers">Our Offers</a></li>
+                <li><a href="page4.html" data-lang="packages">Our Packages</a></li>
+                <li><a href="aboutus.html" data-lang="about">About Us</a></li>
+                <li><a href="page 3.html" data-lang="contact">Contact Us</a></li>
+                <li><a href="page8.html" class="btn-book" data-lang="book">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 🔹 قسم الترحيب -->
+    <div class="hero-section">
+        <div class="hero-image">
+            <img src="images/first.jpg" alt="Golf Resort">
+        </div>
+        <div class="hero-text">
+            <h1 data-lang="welcome">Welcome to Hole In One Golf Resort ⛳</h1>
+            <p data-lang="description">
+                Escape to a golfer’s paradise at <strong>Hole In One Golf Resort</strong>, where luxury meets passion for the game.  
+                Immerse yourself in breathtaking landscapes, world-class courses, and premium hospitality.
+            </p>
+        </div>
+    </div>
+
+    <!-- 🔹 نموذج تسجيل الدخول -->
+    <div class="container login-container">
+        <h2 data-lang="login">Login</h2>
+        <form onsubmit="return validateLogin(event)">
+            <label for="email" data-lang="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="password" data-lang="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <button type="submit" data-lang="login-btn">Login</button>
+            <p id="error-message" class="error-message"></p>
+        </form>
+    </div>
+
+    <!-- 🔹 الأزرار الجانبية -->
+    <div class="side-buttons">
+        <button onclick="toggleDarkMode()" data-lang="dark-mode">🌓 Dark Mode</button>
+        <button onclick="increaseFontSize()" data-lang="increase-font">🔍 A+</button>
+        <button onclick="decreaseFontSize()" data-lang="decrease-font">🔍 A-</button>
+        <button onclick="playAudio()" data-lang="play-sound">🔊 Play Sound</button>
+        <button onclick="pauseAudio()" data-lang="pause-sound">🔇 Pause Sound</button>
+        <button id="language-toggle">العربية</button> <!-- زر الترجمة -->
+    </div>
+
+    <!-- 🔹 مشغل الصوت -->
+    <audio id="backgroundAudio" loop>
+        <source src="audio/page1oudio.mp3" type="audio/mp3">
+    </audio>
+
+</body>
+</html>

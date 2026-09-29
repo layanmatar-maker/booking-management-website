@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Triple Trip Package | Hole In One Resort</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 🔹 شريط التنقل -->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html" data-lang="home">Home</a></li>
+                <li><a href="page 2.html" data-lang="offers">Our Offers</a></li>
+                <li><a href="page4.html" data-lang="packages">Our Packages</a></li>
+                <li><a href="aboutus.html" data-lang="about">About Us</a></li>
+                <li><a href="page 3.html" data-lang="contact">Contact Us</a></li>
+                <li><a href="page8.html" class="btn-book" data-lang="book">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 data-lang="package-title">Triple Trip Package</h1>
+        <b data-lang="price">Price: 400 dollars</b>
+        <div class="package-description">
+            <p>
+                <span class="highlight" data-lang="desc1">Enjoy a two-night stay at the Royal Green Hotel</span>, featuring a comfortable double room with breakfast included.
+            </p>
+            <p>
+                This package includes <span class="highlight" data-lang="desc2">three 18-hole golf rounds</span> and an opportunity to play at the renowned <span class="highlight" data-lang="desc3">Sea View Course</span> (if available).
+            </p>
+            <p>
+                Enhance your experience with <span class="highlight" data-lang="desc4">free golf cart rental</span> and a <span class="highlight" data-lang="desc5">20% discount at the Pro Shop</span>.
+            </p>
+        </div>
+
+        <div class="feature-list">
+            <div class="feature-item">
+                <img src="images/hotel2.png" alt="Royal Green Hotel">
+                <p data-lang="feature1">🏨 Two nights stay at <strong>Royal Green Hotel</strong> in a double room + breakfast</p>
+            </div>
+
+            <div class="feature-item">
+                <img src="images/The Valley Course.png" alt="Golf Course">
+                <p data-lang="feature2">⛳ Three rounds of 18-hole golf</p>
+            </div>
+
+            <div class="feature-item">
+                <img src="images/seaview.png" alt="Sea View Golf Course">
+                <p data-lang="feature3">🌊 Chance to play at the <strong>Sea View Course</strong> (if available , opening at 10am close at 6pm)</p>
+            </div>
+
+            <div class="feature-item">
+                <img src="images/golf small van.jpg" alt="Golf Cart Rental">
+                <p data-lang="feature4">🚗 Free golf cart rental</p>
+            </div>
+
+            <!-- 🔹 قسم Pro Shop مع زر الحجز بجانبه -->
+            <div class="feature-item pro-shop">
+                <img src="images/pro shop.png" alt="Pro Shop Discount">
+                <div class="pro-shop-content">
+                    <p data-lang="feature5">🏪 20% discount at the Pro Shop</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 🔹 الأزرار الجانبية -->
+    <div class="side-buttons">
+        <button onclick="toggleDarkMode()" data-lang="dark-mode">🌓 Dark Mode</button>
+        <button onclick="increaseFontSize()" data-lang="increase-font">🔍 A+</button>
+        <button onclick="decreaseFontSize()" data-lang="decrease-font">🔍 A-</button>
+        <button onclick="playAudio()" data-lang="play-sound">🔊 Play Sound</button>
+        <button onclick="pauseAudio()" data-lang="pause-sound">🔇 Pause Sound</button>
+        <button id="language-toggle">العربية</button> <!-- زر الترجمة -->
+    </div>
+<!-- 🔹 مشغل الصوت -->
+<audio id="backgroundAudio" loop>
+    <source src="audio/packege2oudio.mp3" type="audio/mp3">
+</audio>
+
+    <script src="script.js" defer></script>
+    <script src="translate6.js" defer></script>
+    
+
+</body>
+</html>

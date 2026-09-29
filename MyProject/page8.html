@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Booking | Hole In One Resort</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style8.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 🔹 شريط التنقل -->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html" data-lang="home">Home</a></li>
+                <li><a href="page 2.html" data-lang="offers">Our Offers</a></li>
+                <li><a href="page4.html" data-lang="packages">Our Packages</a></li>
+                <li><a href="aboutus.html" data-lang="about">About Us</a></li>
+                <li><a href="page 3.html" data-lang="contact">Contact Us</a></li>
+                <li><a href="page8.html" class="btn-book" data-lang="book">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 🔹 الأزرار الجانبية -->
+    <div class="side-buttons">
+        <button onclick="toggleDarkMode()" data-lang="dark-mode">🌓 Dark Mode</button>
+        <button onclick="increaseFontSize()" data-lang="increase-font">🔍 A+</button>
+        <button onclick="decreaseFontSize()" data-lang="decrease-font">🔍 A-</button>
+        <button id="language-toggle">العربية</button> <!-- زر الترجمة -->
+    </div>
+<!-- 🔹 مشغل الصوت -->
+<audio id="backgroundAudio" loop>
+    <source src="audio/book now.mp3" type="audio/mp3">
+</audio>
+
+    <div class="container">
+        <h1 data-lang="book-title">Book Your Golf Experience 🏌️‍♂️</h1>
+        <p data-lang="book-desc">Select your preferred package and enjoy an unforgettable golf getaway!</p>
+
+        <!-- نموذج الحجز -->
+        <form id="bookingForm">
+            <label for="full_name" data-lang="full-name">Full Name:</label>
+            <input type="text" id="full_name" name="full_name" required>
+
+            <label for="email" data-lang="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone" data-lang="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="checkin_date" data-lang="checkin">Check-in Date:</label>
+            <input type="date" id="checkin_date" name="checkin_date" required>
+
+            <label for="package" data-lang="select-package">Select Package:</label>
+            <select id="package" name="package">
+                <option value="single_round" data-lang="package1">Five Rounds Package</option>
+                <option value="weekend_getaway" data-lang="package2">Relaxation Retreat</option>
+                <option value="triple_trip" data-lang="package3">Triple Trip Package (20% Discount on Pro Shop & Rentals!)</option>
+            </select>
+
+            <button type="submit" data-lang="confirm-booking">Confirm Booking</button>
+            <p id="error-message" class="error-message"></p>
+        </form>
+    </div>
+
+    <div class="container">
+        <h1 data-lang="payment-title">Credit Card Payment 💳</h1>
+        <p data-lang="payment-desc">Please enter your payment details below:</p>
+
+        <!-- نموذج الدفع -->
+        <form id="paymentForm">
+            <label for="card_name" data-lang="card-name">Cardholder Name:</label>
+            <input type="text" id="card_name" name="card_name" required>
+
+            <label for="card_number" data-lang="card-number">Card Number:</label>
+            <input type="text" id="card_number" name="card_number" maxlength="16" placeholder="1234 5678 9012 3456" required>
+
+            <label for="expiry_date" data-lang="expiry-date">Expiry Date:</label>
+            <input type="month" id="expiry_date" name="expiry_date" required>
+
+            <label for="cvv" data-lang="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" maxlength="3" placeholder="123" required>
+
+            <button type="submit" data-lang="complete-payment">Complete Payment</button>
+        </form>
+
+        <p id="payment-message" class="success-message"></p>
+    </div>
+
+    <script src="script8.js" defer></script>
+    <script src="translate8.js" defer></script>
+    
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Five Rounds Package | Hole In One Resort</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 🔹 شريط التنقل -->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html" data-lang="home">Home</a></li>
+                <li><a href="page 2.html" data-lang="offers">Our Offers</a></li>
+                <li><a href="page4.html" data-lang="packages">Our Packages</a></li>
+                <li><a href="aboutus.html" data-lang="about">About Us</a></li>
+                <li><a href="page3.html" data-lang="contact">Contact Us</a></li>
+                <li><a href="page8.html" class="btn-book" data-lang="book">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 data-lang="package-title">Five Rounds Package 🏌️‍♂️</h1>
+        <b data-lang="price">Price: 600 dollars</b>
+        <div class="package-description">
+            <p>
+                <span class="highlight" data-lang="desc1">Enjoy an unforgettable 5-night stay</span> at our luxurious resort, where comfort meets championship-level golf.
+            </p>
+            <p>
+                Play <span class="highlight" data-lang="desc2">5 rounds of 18-hole golf</span>, including a guaranteed game at the legendary <span class="highlight" data-lang="desc3">Sea View Course</span>.
+            </p>
+            <p>
+                Enhance your skills with a <span class="highlight" data-lang="desc4">free digital training session</span>, designed to take your golf experience to the next level.
+            </p>
+        </div>
+
+        <div class="feature-list">
+            <div class="feature-item">
+                <img src="images/hotel1.2.png" alt="Luxury Hotel Suite">
+                <p data-lang="feature1">🏨 5 Nights in Ritz Carlton Hotel</p>
+            </div>
+
+            <div class="feature-item">
+                <img src="images/golf course.png" alt="Golf Course">
+                <p data-lang="feature2">⛳ 5 Rounds - 18 Holes Each⛳</p>
+            </div>
+
+            <div class="feature-item">
+                <img src="images/seaview.png" alt="Sea View Golf Course">
+                <p data-lang="feature3">🌊 Guaranteed Round at Sea View Course 🌊</p>
+            </div>
+
+            <div class="feature-item">
+                <img src="images/golf trainig.png" alt="Digital Golf Training">
+                <p data-lang="feature4">🎓 Free Digital Training Session 🎓</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 🔹 الأزرار الجانبية -->
+    <div class="side-buttons">
+        <button onclick="toggleDarkMode()" data-lang="dark-mode">🌓 Dark Mode</button>
+        <button onclick="increaseFontSize()" data-lang="increase-font">🔍 A+</button>
+        <button onclick="decreaseFontSize()" data-lang="decrease-font">🔍 A-</button>
+        <button onclick="playAudio()" data-lang="play-sound">🔊 Play Sound</button>
+        <button onclick="pauseAudio()" data-lang="pause-sound">🔇 Pause Sound</button>
+        <button id="language-toggle">العربية</button> <!-- زر الترجمة -->
+    </div>
+<!-- 🔹 مشغل الصوت -->
+<audio id="backgroundAudio" loop>
+    <source src="audio/packege1oudio.mp3" type="audio/mp3">
+</audio>
+
+    <script src="script3.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="translate5.js" defer></script>
+    
+
+</body>
+</html>

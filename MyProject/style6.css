@@ -1,0 +1,160 @@
+/* 🔹 إعدادات عامة */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #333;
+}
+
+/* 🔹 شريط التنقل */
+.navbar {
+    background: linear-gradient(90deg, #66bb6a, #388e3c);
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+    border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+    background: #4caf50;
+    transform: scale(1.05);
+}
+
+/* 🔹 زر الحجز */
+.btn-book {
+    background: linear-gradient(45deg, #66bb6a, #388e3c);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.btn-book:hover {
+    background: linear-gradient(45deg, #388e3c, #66bb6a);
+    transform: scale(1.05);
+}
+
+/* 🔹 الأزرار الجانبية */
+.side-buttons {
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.side-buttons button {
+    background: linear-gradient(45deg, #66bb6a, #2e7d32);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.side-buttons button:hover {
+    background: linear-gradient(45deg, #2e7d32, #81c784);
+    transform: scale(1.05);
+}
+
+/* 🔹 تنسيق نموذج الحجز */
+.container {
+    width: 40%;
+    margin: 120px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 90%;
+    padding: 10px;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* 🔹 زر تأكيد الحجز */
+button {
+    background: linear-gradient(90deg, #388e3c, #2e7d32);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #2e7d32, #388e3c);
+    transform: scale(1.05);
+}
+
+/* 🔹 رسالة الخطأ */
+.error-message {
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* 🔹 الوضع الداكن */
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #f1f1f1;
+}
+
+.dark-mode .navbar {
+    background: linear-gradient(90deg, #1b5e20, #0d4020);
+}
+
+.dark-mode .container {
+    background: #222;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.15);
+}

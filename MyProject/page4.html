@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Packages - Hole In One Resort</title>
+    <link rel="stylesheet" href="style5.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 🔹 شريط التنقل -->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html" data-lang="home">Home</a></li>
+                <li><a href="page 2.html" data-lang="offers">Our Offers</a></li>
+                <li><a href="page4.html" data-lang="packages">Our Packages</a></li>
+                <li><a href="aboutus.html" data-lang="about">About Us</a></li>
+                <li><a href="page 3.html" data-lang="contact">Contact Us</a></li>
+                <li><a href="page8.html" class="btn-book" data-lang="book">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 🔹 الأزرار الجانبية -->
+    <div class="side-buttons">
+        <button onclick="toggleDarkMode()" data-lang="dark-mode">🌓 Dark Mode</button>
+        <button onclick="increaseFontSize()" data-lang="increase-font">🔍 A+</button>
+        <button onclick="decreaseFontSize()" data-lang="decrease-font">🔍 A-</button>
+        <button onclick="playAudio()" data-lang="play-sound">🔊 Play Sound</button>
+        <button onclick="pauseAudio()" data-lang="pause-sound">🔇 Pause Sound</button>
+        <button id="language-toggle">العربية</button> <!-- زر الترجمة -->
+    </div>
+
+    <div class="container">
+        <h1 data-lang="exclusive-packages">Our Exclusive Packages</h1>
+
+        <!-- 🔹 البطاقات -->
+        <div class="packages-container">
+            <!-- البطاقة الأولى (يسار) -->
+            <div class="package-card left" onclick="window.location.href='page5.html';">
+                <h2 data-lang="package1-title">Five Rounds Package</h2>
+                <ul>
+                    <li data-lang="package1-item1">Five-night stay in a luxury suite</li>
+                    <li data-lang="package1-item2">Five rounds - 18 holes</li>
+                    <li data-lang="package1-item3">One guaranteed round at the famous Sea View Course</li>
+                    <li data-lang="package1-item4">One free digital training session</li>
+                </ul>
+            </div>
+
+            <!-- البطاقة الثانية (وسط) -->
+            <div class="package-card center" onclick="window.location.href='page6.html';">
+                <h2 data-lang="package2-title">Triple Trip</h2>
+                <ul>
+                    <li data-lang="package2-item1">Two-night stay in a double room with breakfast</li>
+                    <li data-lang="package2-item2">Three rounds - 18 holes</li>
+                    <li data-lang="package2-item3">Includes one round at the Sea View Course (if available)</li>
+                    <li data-lang="package2-item4">Free golf cart rental</li>
+                    <li data-lang="package2-item5">20% discount at the Pro Shop</li>
+                </ul>
+            </div>
+
+            <!-- البطاقة الثالثة (يمين) -->
+            <div class="package-card right" onclick="window.location.href='page7.html';">
+                <h2 data-lang="package3-title">Relaxation Retreat</h2>
+                <ul>
+                    <li data-lang="package3-item1">One-night stay with full breakfast</li>
+                    <li data-lang="package3-item2">Dinner at any resort restaurant</li>
+                    <li data-lang="package3-item3">Access to the golf courses (fees apply, Sea View excluded)</li>
+                    <li data-lang="package3-item4">Free club rental</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 🔹 مشغل الصوت -->
+    <audio id="backgroundAudio" loop>
+        <source src="audio/page3oudio.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="script.js" defer></script>
+    <script src="translate4.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Hole In One Resort</title>
+    <link rel="stylesheet" href="style4.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 🔹 شريط التنقل -->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html" data-lang="home">Home</a></li>
+                <li><a href="page 2.html" data-lang="offers">Our Offers</a></li>
+                <li><a href="page4.html" data-lang="packages">Our Packages</a></li>
+                <li><a href="aboutus.html" data-lang="about">About Us</a></li>
+                <li><a href="page 3.html" data-lang="contact">Contact Us</a></li>
+                <li><a href="page8.html" class="btn-book" data-lang="book">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 🔹 الأزرار الجانبية -->
+    <div class="side-buttons">
+        <button onclick="toggleDarkMode()" data-lang="dark-mode">🌓 Dark Mode</button>
+        <button onclick="increaseFontSize()" data-lang="increase-font">🔍 A+</button>
+        <button onclick="decreaseFontSize()" data-lang="decrease-font">🔍 A-</button>
+        <button onclick="playAudio()" data-lang="play-sound">🔊 Play Sound</button>
+        <button onclick="pauseAudio()" data-lang="pause-sound">🔇 Pause Sound</button>
+        <button id="language-toggle">العربية</button> <!-- زر الترجمة -->
+    </div>
+
+    <div class="container">
+        <h1 data-lang="contact-title">Contact Us</h1>
+        <p data-lang="contact-intro">For custom event packages and long-term stays, please contact our team to arrange your tailored experience.</p>
+
+        <h2 data-lang="commitment">Our Commitment</h2>
+        <p data-lang="commitment-desc">At Hole In One Golf Resort, we strive to offer the best services for golf enthusiasts, corporate events, and extended stays. Reach out to us for personalized packages.</p>
+
+        <h2 data-lang="get-in-touch">Get in Touch</h2>
+        <p>📞 <span data-lang="phone">Phone:</span> +351 912 345 678 | +351 987 654 321</p>
+        <p>📧 <span data-lang="email">Email:</span> contact@holeinone.com</p>
+
+        <h2 data-lang="request-callback">Request a Callback</h2>
+        <form onsubmit="return validateForm(event)">
+            <label for="user_phone" data-lang="phone-number">Your Phone Number:</label>
+            <input type="tel" id="user_phone" name="user_phone" placeholder="Enter your phone number" required>
+
+            <label for="user_email" data-lang="email-address">Your Email:</label>
+            <input type="email" id="user_email" name="user_email" placeholder="Enter your email" required>
+
+            <button type="submit" data-lang="submit">Submit</button>
+        </form>
+
+
+    <!-- 🔹 مشغل الصوت -->
+    <audio id="backgroundAudio" loop>
+        <source src="audio/contrct with us.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="script.js" defer></script>
+    <script src="translate3.js" defer></script>
+    
+
+</body>
+</html>
